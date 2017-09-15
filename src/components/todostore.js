@@ -1,5 +1,4 @@
 import {observable, action} from 'mobx';
-import React from 'react';
 
 class TodoStore {
 	@observable tasks = []
@@ -11,7 +10,6 @@ class TodoStore {
 	}
 	@action removeTodo = (task) => {
 		let deleteIndex = this.tasks.indexOf(task)
-		console.log(deleteIndex)
 		if (deleteIndex === this.tasks.length - 1){
 			this.tasks.pop()
 		} else if (deleteIndex === 0) {

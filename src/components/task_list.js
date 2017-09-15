@@ -11,13 +11,6 @@ const TaskList = (props) => {
 							onClick={() => props.store.removeTodo(task)}> x </button>
 				</li>
 		)
-		// return (
-		// 	<li key={task}>{task}
-		// 		<button className='removeTask'
-		// 				onClick={props.store.removeTodo(i)} > x </button>
-		// 	}
-		// 	</li>
-		// )
 	});
 
 	return (
